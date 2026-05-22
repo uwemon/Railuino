@@ -5,6 +5,7 @@
  *
  * Copyright (C) 2012 Joerg Pleumann
  * Copyright (C) 2024 christophe bobille
+ * Copyright (C) 2024 Uwe Monreal
  *
  * This example is free software; you can redistribute it and/or
  * modify it under the terms of the Creative Commons Zero License,
@@ -141,7 +142,12 @@
     * Stops receiving messages from the CAN hardware. Clears
     * the internal buffer.
     */
-   // void end();
+   void end();
+
+  /**
+   *  Recherche de locomotives sur la voie.
+   */
+  bool locoDiscovery();
  
    /**
     * Sends a message and reports true on success. Internal method.
@@ -331,13 +337,13 @@
  
    // See https://streaming.maerklin.de/public-media/cs2/cs2CAN-Protokoll-2_0.pdf -> 2.8 Befehl: Fast Read für mfx SID - Adresse
  
-   bool readConfig(const uint16_t address, uint16_t number, uint8_t *value);
+   bool readConfig(const uint16_t address, uint16_t number, byte *value);
  
    /**
     * Queries the software version of the track format processor.
     */
-   bool getVersion();
-   //bool getVersion(uint8_t *high, uint8_t *low);
+   //bool getVersion();
+   bool getVersion(uint8_t *high, uint8_t *low);
  
    /**
     * Processes commands received on the serial or TCP port
