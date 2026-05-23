@@ -30,7 +30,8 @@
  //#define RAILUINO_VERSION 0x005B // 0.91 -> upgrade 0.90 to 0.91 christophe bobille 2024
  //#define RAILUINO_VERSION 0x005C // 0.92 -> upgrade 0.91 to 0.92 christophe bobille 17/07/2024
  //#define RAILUINO_VERSION 0x005D   // 0.93 -> upgrade 0.92 to 0.93 christophe bobille 2024
- #define RAILUINO_VERSION 0x3AD   // 0.941 -> upgrade 0.93 to 0.94 for Arduino christophe bobille 03/2025
+ //#define RAILUINO_VERSION 0x3AD   // 0.941 -> upgrade 0.93 to 0.94 for Arduino christophe bobille 03/2025
+ #define RAILUINO_VERSION 0x005F   // 0.95 -> upgrade 0.941 to 0.95 for DesktopStation Uwe Monreal 05/2026
  #define TRACKBOX_VERSION 0x0127 // 1.39
  
  /**
